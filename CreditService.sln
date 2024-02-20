@@ -13,15 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infra", "04 - Infra", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Tests", "05 - Tests", "{7AC07FED-3354-4E18-98A3-491CFDA8F0FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditService.API", "CreditService.API\CreditService.API.csproj", "{4B071577-818C-43A8-B85C-619177B145FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditService.API", "CreditService.API\CreditService.API.csproj", "{4B071577-818C-43A8-B85C-619177B145FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditService.Domain", "CreditService.Domain\CreditService.Domain.csproj", "{87BE9F10-A55B-4B2E-85EA-C950D6B6370E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditService.Domain", "CreditService.Domain\CreditService.Domain.csproj", "{87BE9F10-A55B-4B2E-85EA-C950D6B6370E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditService.Service", "CreditService.Service\CreditService.Service.csproj", "{3B8ED752-0110-434A-B4D8-58E115C27796}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditService.Service", "CreditService.Service\CreditService.Service.csproj", "{3B8ED752-0110-434A-B4D8-58E115C27796}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditService.Infra.Data", "CreditService.Infra.Data\CreditService.Infra.Data.csproj", "{93B31AC4-C4DE-4DE7-9FB4-6D38C48E0388}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditService.Infra.Data", "CreditService.Infra.Data\CreditService.Infra.Data.csproj", "{93B31AC4-C4DE-4DE7-9FB4-6D38C48E0388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditService.Tests", "CreditService.Tests\CreditService.Tests.csproj", "{E3C68032-CE71-4577-875B-61ED2406C79C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditService.Tests", "CreditService.Tests\CreditService.Tests.csproj", "{E3C68032-CE71-4577-875B-61ED2406C79C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9C823947-CB34-4BA0-8575-67E71FEF612C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{E3C68032-CE71-4577-875B-61ED2406C79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3C68032-CE71-4577-875B-61ED2406C79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3C68032-CE71-4577-875B-61ED2406C79C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C823947-CB34-4BA0-8575-67E71FEF612C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C823947-CB34-4BA0-8575-67E71FEF612C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C823947-CB34-4BA0-8575-67E71FEF612C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C823947-CB34-4BA0-8575-67E71FEF612C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
