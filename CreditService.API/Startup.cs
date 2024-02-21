@@ -1,19 +1,6 @@
-﻿using AutoMapper;
-using CreditService.Domain.Dto;
-using CreditService.Domain.Entities;
-using CreditService.Domain.Interfaces;
-using CreditService.Infra.Data;
-using CreditService.Infra.Data.Repository;
+﻿using CreditService.Domain.Interfaces;
 using CreditService.Service.Services;
-using FluentValidation.AspNetCore;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using System.Reflection;
 
 namespace CreditService.API
 {
@@ -52,7 +39,7 @@ namespace CreditService.API
         }
 
         public void ConfigureServices(IServiceCollection services)
-        {         
+        {
             services.AddControllers();
 
             services.AddSwaggerGen(c =>
@@ -60,22 +47,7 @@ namespace CreditService.API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Credit Approval API", Version = "v1" });
             });
 
-            services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
-
-            //services.AddScoped<IBaseRepository<Credit>, BaseRepository<Credit>>();
-            //services.AddScoped<IBaseService<Credit>, BaseService<Credit>>();
-            //services.AddScoped<IBaseService<Credit>, BaseService<Credit>>();
             services.AddScoped<IProcessamentoCreditoService, ProcessamentoCreditoService>();
-
-
-            //services.AddSingleton(new MapperConfiguration(config =>
-            //{
-            //    config.CreateMap<CreateCreditModel, Credit>();
-            //    config.CreateMap<UpdateCreditModel, Credit>();
-            //    config.CreateMap<Credit, CreditModel>();
-            //}).CreateMapper());
         }
     }
 }

@@ -1,16 +1,10 @@
 ﻿using CreditService.Domain.Dto;
-using CreditService.Domain.Entities;
 using CreditService.Domain.Enums;
 using CreditService.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CreditService.Service.Services
 {
-    public class ProcessamentoCreditoService: IProcessamentoCreditoService
+    public class ProcessamentoCreditoService : IProcessamentoCreditoService
     {
         public async Task<ResultadoProcessamentoDto> ProcessarCredito(CreditoDto credito)
         {
@@ -71,6 +65,6 @@ namespace CreditService.Service.Services
                 default:
                     throw new ArgumentOutOfRangeException(nameof(tipo), "Tipo de crédito inválido.");
             }
-        }  
+        }
     }
 }

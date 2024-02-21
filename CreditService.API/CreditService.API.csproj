@@ -18,12 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CreditService.Domain\CreditService.Domain.csproj" />
-    <ProjectReference Include="..\CreditService.Infra.Data\CreditService.Infra.Data.csproj" />
     <ProjectReference Include="..\CreditService.Service\CreditService.Service.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>

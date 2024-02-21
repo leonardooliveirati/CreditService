@@ -1,5 +1,4 @@
 using CreditService.API;
-using Microsoft.AspNetCore.Hosting;
 
 public class Program
 {

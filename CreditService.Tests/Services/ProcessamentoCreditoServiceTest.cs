@@ -1,12 +1,6 @@
 ﻿using CreditService.Domain.Dto;
 using CreditService.Domain.Enums;
 using CreditService.Service.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xunit;
 
 namespace CreditApprovalTeste
 {

@@ -1,12 +1,5 @@
 ﻿using CreditService.Domain.Dto;
-using CreditService.Domain.Entities;
-using CreditService.Domain.Enums;
 using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CreditService.Service.Validators
 {
